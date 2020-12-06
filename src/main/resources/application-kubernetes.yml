@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+        mode: polling
+        period: 5000
+      ribbon:
+        enabled: true
+        mode: POD
+
+eureka:
+  client:
+    enabled: false
